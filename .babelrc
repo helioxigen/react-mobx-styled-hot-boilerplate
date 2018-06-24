@@ -1,0 +1,29 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": [
+                    "> 1%"
+                ]
+            }
+        ],
+        "@babel/preset-react"
+    ],
+    "plugins": [
+        "react-hot-loader/babel",
+        "styled-components",
+        [
+            "@babel/plugin-proposal-decorators",
+            {
+                "legacy": true
+            }
+        ],
+        [
+            "@babel/plugin-proposal-class-properties",
+            {
+                "loose": true
+            }
+        ]
+    ]
+}
